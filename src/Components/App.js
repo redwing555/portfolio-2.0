@@ -1,14 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Greeting from './Greeting';
+import About from './about/About';
+import Header from './header/Header';
+import Contact from './contact/Contact';
+import Footer from './footer/Footer';
+import Experience from './experience/Experience';
+import Testimonials from './testimonials/Testimonials';
 
 const App = () => (
-
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Greeting />} />
-    </Routes>
-  </BrowserRouter>
+  <>
+    <Header />
+    <About />
+    <Experience />
+    <Testimonials />
+    <Contact />
+    <Footer />
+  </>
 
 );
 
