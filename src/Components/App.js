@@ -39,7 +39,7 @@ const App = () => (
           )}
       />
       <Route
-        path="/collection"
+        path="/contact"
         element={(
 
           <Contact />

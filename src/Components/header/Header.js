@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
 
 function Header() {
   const [responsive, setResponsive] = useState(false);
@@ -39,7 +40,7 @@ function Header() {
     <div className="nav-container">
       <nav>
 
-        <ul className={responsive ? 'sidebar responsive' : 'sidebar'}>
+        <ul className={responsive ? 'navbar responsive' : 'navbar'}>
 
           {links.map((link) => (
             <li key={link.id} className="nav-link">
