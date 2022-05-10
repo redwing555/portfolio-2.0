@@ -112,7 +112,6 @@ img {
   object-fit: cover;
 }
 
-
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .container {
@@ -123,7 +122,6 @@ img {
     margin-top: 6rem;
   }
 }
-
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
