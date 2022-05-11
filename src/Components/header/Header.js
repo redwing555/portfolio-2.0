@@ -1,62 +1,27 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import './Header.css';
+import CTA from './CTA';
+import me from '../../assets/img/me.png';
+import Socials from './Socials';
 
 function Header() {
-  const [responsive, setResponsive] = useState(false);
-  const [times, setFaTimes] = useState(false);
-
-  const toggleResponsive = () => {
-    setResponsive((prev) => !prev);
-    setFaTimes(((prev) => !prev));
-  };
-
-  const links = [
-    {
-      id: 1,
-      path: '/about',
-      text: 'About',
-    },
-    {
-      id: 2,
-      path: '/myExperience',
-      text: 'Experience',
-    },
-    {
-      id: 3,
-      path: '/testimonials',
-      text: 'Testimonials',
-    },
-
-    {
-      id: 4,
-      path: '/contact',
-      text: 'contact',
-    },
-
-  ];
-
   return (
-    <div className="nav-container">
-      <nav>
+    <header>
+      <div className="container header__container">
+        <h5>
+          Hello I am
+        </h5>
+        <h1>Houssam HICHAMI</h1>
+        <h5 className="text-light">Fullstack Developper</h5>
+        <CTA />
+        <Socials />
+        <div className="me">
+          <img src={me} alt="me" />
+        </div>
+        <a href="#contact" className="scroll__down"> Scroll Down</a>
+      </div>
 
-        <ul className={responsive ? 'navbar responsive' : 'navbar'}>
-
-          {links.map((link) => (
-            <li key={link.id} className="nav-link">
-              <NavLink className="link" to={link.path} exact="true">
-                {link.text}
-              </NavLink>
-            </li>
-          ))}
-
-        </ul>
-
-        <button className="icon" type="button" onClick={toggleResponsive}>
-          <i className={times ? 'fa fa-bars fa fa-times' : 'fa fa-bars'} />
-        </button>
-      </nav>
-    </div>
+    </header>
 
   );
 }
