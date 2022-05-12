@@ -1,54 +1,28 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Route, Routes,
-} from 'react-router-dom';
+
 import About from './about/About';
 import Header from './header/Header';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
 import Experience from './experience/Experience';
+import Services from './services/Services';
+import Portfolio from './portfolio/Portfolio';
 import Testimonials from './testimonials/Testimonials';
+import Nav from './Nav/Nav';
 
 const App = () => (
 
-  <Router>
+  <>
     <Header />
-    <Routes>
-      <Route
-        path="/about"
-        element={(
-
-          <About />
-
-          )}
-      />
-      <Route
-        path="/myExperience"
-        element={(
-
-          <Experience />
-
-          )}
-      />
-      <Route
-        path="/testimonials"
-        element={(
-
-          <Testimonials />
-
-          )}
-      />
-      <Route
-        path="/contact"
-        element={(
-
-          <Contact />
-
-          )}
-      />
-    </Routes>
+    <Nav />
+    <About />
+    <Experience />
+    <Services />
+    <Portfolio />
+    <Testimonials />
+    <Contact />
     <Footer />
-  </Router>
+  </>
 
 );
 

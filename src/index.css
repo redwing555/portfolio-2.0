@@ -36,7 +36,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../src/assets/img/bg-texture.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../src/assets/img/bg-texture.webp);
 }
 
 .container {
