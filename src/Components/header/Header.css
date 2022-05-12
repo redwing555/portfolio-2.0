@@ -1,3 +1,7 @@
+/* *{
+    outline: solid 1px red !important;
+} */
+
 header {
   height: 100vh;
   padding-top: 7rem;
@@ -42,9 +46,11 @@ header {
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  padding-right: 2rem;
-  padding-top: 4.5rem;
+
+  /* padding-right: 2rem;
+  padding-top: 4.5rem; */
   overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .scroll__down {
@@ -59,14 +65,20 @@ header {
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   header {
-    height: 63vh;
+    height: 112vh;
   }
 }
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   header {
-    height: 90vh;
+    height: 114vh;
+  }
+
+  .me {
+    width: 18rem;
+    height: 19rem;
+    margin-left: 2rem;
   }
 
   .header__socials,
