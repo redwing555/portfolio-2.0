@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import './nav.css';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
@@ -9,7 +10,9 @@ const Nav = () => {
   return (
     <>
       <nav>
+
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
+
           {' '}
           <AiOutlineHome />
           {' '}
