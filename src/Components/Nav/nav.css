@@ -20,6 +20,8 @@ nav a {
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 nav a:hover {
@@ -29,4 +31,5 @@ nav a:hover {
 nav a.active {
   background: var(--color-bg);
   color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
