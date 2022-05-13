@@ -41,7 +41,7 @@ function About() {
             Etiam consequat fringilla felis, vel feugiat erat dapibus
             vel. Suspendisse porta erat ut odio tristique consectetur.
           </p>
-          <a href="#contact" className="btn btn-primary"> Let's Talk</a>
+          <a href="#contact" className="btn btn-primary"> Let us Talk</a>
         </div>
       </div>
     </section>
